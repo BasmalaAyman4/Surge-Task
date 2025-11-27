@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GameVerse Home Page - New Design</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#9d25f4",
+              "background-light": "#f7f5f8",
+              "background-dark": "#1a1022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">stadia_controller</span>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">GameVerse</h2>
+</div>
+<nav class="hidden items-center gap-9 md:flex">
+<a class="text-sm font-medium text-white transition-colors hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-gray-400 transition-colors hover:text-primary" href="#">Favorites</a>
+<a class="text-sm font-medium text-gray-400 transition-colors hover:text-primary" href="#">Recently Played</a>
+</nav>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 w-full max-w-xs">
+<div class="relative flex w-full flex-1 items-stretch rounded-lg h-full">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-white/10 bg-white/5 focus:border-primary/50 h-full placeholder:text-gray-500 px-4 text-sm font-normal leading-normal" placeholder="Search games..." value=""/>
+<div class="text-gray-400 absolute inset-y-0 right-0 flex items-center justify-center pr-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+</div>
+</label>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/5 text-white transition-colors hover:bg-white/10">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="relative py-24 sm:py-32">
+<div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYu-Y30ynVi4Me_0OeE7SeXZK5B_OOPRm0AVyaumw14Ccva2YhddafsheUImqfyV0CvBh4rIcDLOzEfZDOtMSkHJYc64eHYBeQkqCVK922SLKBa4zaVH33z8rl_2pxplJPa8Aq8lRJKygPaU7fyC68rhSMV2kQojNaZRPzNUU1kgxahx8HwXxtjaYeRiN4MRtDAnJJ3cAyuzDJG4Bd3xFByAy_Z3OrQaLe_CY0Rzh7Xtwnon8Lli5KcJPwjwV553idYKfc8Kelj9zV'); background-position: center; background-size: cover;"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="flex flex-col items-center justify-center gap-6 text-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl lg:text-6xl">Play Hundreds of Games Instantly</h1>
+<h2 class="max-w-2xl text-base font-normal leading-normal text-gray-300 sm:text-lg">Discover and play a vast collection of indie and classic games right from your browser.</h2>
+<label class="mt-4 flex flex-col min-w-40 h-14 w-full max-w-lg">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-lg">
+<div class="text-gray-400 flex border border-white/10 bg-background-dark/70 items-center justify-center pl-5 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-white/10 bg-background-dark/70 focus:border-primary/50 h-full placeholder:text-gray-400 pl-2 pr-4 text-base font-normal leading-normal" placeholder="Search for games..." value=""/>
+</div>
+</label>
+<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/10 px-4 transition-colors hover:bg-white/20">
+<p class="text-white text-sm font-medium leading-normal">Action</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/10 px-4 transition-colors hover:bg-white/20">
+<p class="text-white text-sm font-medium leading-normal">Puzzle</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/10 px-4 transition-colors hover:bg-white/20">
+<p class="text-white text-sm font-medium leading-normal">Arcade</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="container mx-auto px-4 py-8 sm:py-12">
+<!-- Filter Bar -->
+<section class="mb-12">
+<div class="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+<div class="flex flex-wrap gap-2">
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-bold leading-normal">All</p>
+</div>
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4 transition-colors hover:bg-white/10">
+<p class="text-white text-sm font-medium leading-normal">Action</p>
+</div>
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4 transition-colors hover:bg-white/10">
+<p class="text-white text-sm font-medium leading-normal">Puzzle</p>
+</div>
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4 transition-colors hover:bg-white/10">
+<p class="text-white text-sm font-medium leading-normal">Arcade</p>
+</div>
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4 transition-colors hover:bg-white/10">
+<p class="text-white text-sm font-medium leading-normal">Sports</p>
+</div>
+<div class="flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4 transition-colors hover:bg-white/10">
+<p class="text-white text-sm font-medium leading-normal">Strategy</p>
+</div>
+</div>
+<button class="flex h-9 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg px-4 bg-transparent text-gray-400 text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:text-white">
+<span class="material-symbols-outlined text-xl">close</span>
+<span class="truncate">Clear filters</span>
+</button>
+</div>
+</section>
+<!-- Featured Games Section -->
+<section class="mb-16">
+<h3 class="text-2xl font-bold text-white mb-6">Trending Now</h3>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Game Card 1 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/20">
+<div class="relative">
+<img class="h-48 w-full object-cover" data-alt="futuristic sci-fi spaceship in nebula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRRg_UJHEt03hMQDBgcxmtsMVpnyYXyzvUo3vuLAKLUEZeWTDja5g8o2IGYYN-J8tUY4KxwphZsCVL9UV5jGVgcMTo8fdIIDEJ-pWahlBl_pL89wTxSTKWUacjHEIvBMFo8XLxTwBs7HjcV95aXB9lZlSCLxPpkGgWAEVNZJLjLnkObhmFou5dn9wCBVQ8PlaFhh_kNxieMnU2lQFNSFxgqBNcPkddfkxFISceWvYmd5gLS-eJEfxDVHD1TGehi7VKd4cBgrPC5QuU"/>
+<div class="absolute top-2 left-2 rounded-md bg-red-500/80 px-2 py-0.5 text-xs font-bold text-white">HOT</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h4 class="text-lg font-bold text-white">Cyber Odyssey</h4>
+<p class="mt-1 text-sm text-gray-400 flex-grow">Explore a neon-drenched metropolis in this thrilling action RPG.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">Action</p>
+</div>
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">RPG</p>
+</div>
+</div>
+<button class="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/80">
+<span class="truncate">Play Now</span>
+</button>
+</div>
+</div>
+<!-- Game Card 2 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/20">
+<div class="relative">
+<img class="h-48 w-full object-cover" data-alt="vintage arcade machines in a row" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD23sxwfgqhDThK50NOXAfBACjI2ZH1Pr_wCyIqNoQVjk-n5KHo0FVW80F9MJucJwuvaJulKQTPLsZ3dgdbS_03ctrZ_4Q-E3cSvRrSZsjhgUB_f2_Y2DXcxhf74Trjo6FDP11X6xnDvqyWTjLNA6XQr_YIXyCRNzjss283LuEL6dZfr-YwZlnlHKDC_B1u6osm2KijZlowDELF6_yBUs3Jdooctffcq4FSPUes3RZJjT6dBdcHOIy8QEivWjXvIqUmdGitH_FhExYG"/>
+<div class="absolute top-2 left-2 rounded-md bg-blue-500/80 px-2 py-0.5 text-xs font-bold text-white">NEW</div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h4 class="text-lg font-bold text-white">Pixel Puzzler</h4>
+<p class="mt-1 text-sm text-gray-400 flex-grow">A mind-bending puzzle game with a retro arcade aesthetic.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">Puzzle</p>
+</div>
+</div>
+<button class="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/80">
+<span class="truncate">Play Now</span>
+</button>
+</div>
+</div>
+<!-- Game Card 3 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/20">
+<img class="h-48 w-full object-cover" data-alt="fantasy warrior overlooking a vast landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiKTJzLxIjPToUagfmPeKBVhtVy9vByaool_LNtHqPwSC1pwDAYZh4_9vLuAmOUoh0vv4UGrYomLEkk--wbi0YizQhWNGzHLhsmPdajcppFdIOj3StEiVtA_EplGGaZAZOg4vM3UkuTCrELIMtqSwULGpSDvpXj0Ie6bS-sS2rOBWaPz3RN9iMD0TI0GG4f-EY7uIo0_FQz7okUFfdf9ndVq5yH_c5x1Db4Nmp_cYBYfIdNLf5QfJb99ed2e46bwvDfED0l_hdC-Ei"/>
+<div class="flex flex-1 flex-col p-4">
+<h4 class="text-lg font-bold text-white">Aetherium Wars</h4>
+<p class="mt-1 text-sm text-gray-400 flex-grow">Lead your armies to victory in this epic fantasy strategy game.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">Strategy</p>
+</div>
+</div>
+<button class="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/80">
+<span class="truncate">Play Now</span>
+</button>
+</div>
+</div>
+<!-- Game Card 4 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-primary/20">
+<img class="h-48 w-full object-cover" data-alt="glowing neon race car on a track" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3ntYwygb1b5QcO9eGm8HSBcGeb_Ml44SDzw0ElWF1j1mFj3xy3wxwbnOpGkNq-AGw-AiTVPucqZYD5Tlwfk77JpQE2tAj8OBTyqT9yj__9VwGnUvE3XSqToTqmh7Id1sdATiXCknJAq6idfDer33LpgBOvMfvzdI9f4QEbqicQluaS7UouitML0Hk9z2NnLQEFw8zq0oosLSPHgtL1YpfdQe3MthpfHrBCANdLJMyvOhOkspGFpagpCsIYGsSkJJ1dzeDXXK_Ir0H"/>
+<div class="flex flex-1 flex-col p-4">
+<h4 class="text-lg font-bold text-white">Galaxy Racer</h4>
+<p class="mt-1 text-sm text-gray-400 flex-grow">High-speed, anti-gravity racing on interplanetary tracks.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">Racing</p>
+</div>
+<div class="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2">
+<p class="text-white text-xs font-medium">Sports</p>
+</div>
+</div>
+<button class="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/80">
+<span class="truncate">Play Now</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- All Games Grid -->
+<section>
+<h3 class="text-2xl font-bold text-white mb-6">All Games</h3>
+<div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+<!-- Grid Game Card Template -->
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="1">
+<img class="h-64 w-full object-cover" data-alt="abstract geometric puzzle shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSD0WIhoAsL75V9s54hU7tP7zc_KLb64auzQUXwvXcDuA35V7938PWo3PJfTsh256r0abdiGQKTN8YmP4MpbrfifZpQliLAFSnvteDZpW7qPI2CiitxGqOwqffygPuapm2yd1Rx5pzjMLskZkP4sc3ZtpQWfmu6gnBmRxuvNaiGwM0KU8bXsGK2mQes57EAeGkGdXlQ9pY81aizsbzvASmN9NZ5Pd9yORcHyLaVhmjmaFT2Ps0Qx8FZ3-8vKc5g4rf7GWSLZZPrymY"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+<div class="absolute inset-x-0 bottom-0 p-4">
+<h4 class="font-bold text-white">Chroma Cube</h4>
+<div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit">
+<p class="text-white text-xs font-medium">Puzzle</p>
+</div>
+</div>
+<button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-lg">favorite_border</span>
+</button>
+<div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button>
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button>
+</div>
+</div>
+<!-- Add 10 more similar cards for the grid -->
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="2"><img class="h-64 w-full object-cover" data-alt="a lone space marine in a dark corridor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeGf9omoIOOta4tnPkz53HunaNB6tMJTFZfsQdDRREZNPCV-_FYKijvbefANBkl-qKDPPSRf7AYRmbeeQR2pf_lqCTTW2wFQx80e1Hw2JN9u7rn41JfPm16V0zho3JLOAV3tSo2A3_HC8hCDwEwYlle9niXPKIJsG-d3GvgKap0_hTYR9S1fNpFiw_htK4u6QSoEbrVrb3MyjdiPMHofnH4gYyf0tQG9V733nWzEtrHnl7PFMUq9UOL9ZAGjcvCPBzTC8V312Dzsa2"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Void Runner</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Action</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="3"><img class="h-64 w-full object-cover" data-alt="a soccer ball on a green field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVHWhr3ImXJJr4ryrGjnHS2akfx65KozrDn6e6Obb2zGkxgoqix9N5qjG2oQQa9Jma2x2vJZ7OedU8CModNgC3h684KM4_WQuwnzhHdVfEHHJRG5SkMFlxc4WsxbkxkvIh7wYrrt_xd47FdoRYVQaHI8tbellJ3gedw0Llt042C7jZSX12cM6qvZrPFjDHt47oqzgKYXuBMsfMdqVcoDXSq_6pEf8gDYactJAvyCuJqDjKvyQn6Epk9_XpPoOtSP3pDl91-e62Np-F"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Super Goal</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Sports</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="4"><img class="h-64 w-full object-cover" data-alt="a retro video game pixel art landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC82VdGZzUZ4PSXajcMS8iig-ji4mqNjOz0ZOsQgzZd86PYiJPLwhTdkJE-WpiBIvaY7C8Xn8kDp7IBd5YZ1mUz5VJ0QrLOm4vKILr_UZ7hirwV4Wb_YTiL9DEjR06JS8dWck62MBr6MXF6E7DukQz2lUEGaL08Gsy9G9JdYFpEJRs5uWVhR3TMAfRRX6zkfC-_CosjNsTSE1ACNyUKV_aArfvBQh6Qdx2tfeO2bfYy-VfIa3RTRJtis6uX8ce0rqX1P5-DI9odWWti"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">8-Bit Adventure</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Arcade</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="5"><img class="h-64 w-full object-cover" data-alt="a detailed chessboard with pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDOFqVU46CEjV9MoiBmQ16hPlDffnMvrf-fg_DVU4fWdtHfUzQw_1c3bi7NQYpquQaaGZAnd_FbopKw5TZsYWf8cWSt29FtYAcZXXxu3PigJODmV2G7HebnGG9aAgb5CdLH2ZSZFsZ7fn45oFxoVHGZg79_c0C6UeudtPRBR1jhVMT3llAvboek39ebOX0zYHTM5QI5R3mM0pFt9v9IAlVmDC__7L4Gi3rDvR4zCBk14q8Y1vuOnPxEI0ewg40ZMH5SNSdqOgTFSZ4"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Kingsfall</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Strategy</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="6"><img class="h-64 w-full object-cover" data-alt="a magical forest with glowing mushrooms" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_0bQWD1VZNG0Vjof2KlqGuour8g7bFC6bJIZUvaR_xhOB2GrW0wn5r_vhoG-108QbT0S6LaIS6cWuDR-e2UpiXV3jofQ03iVxkTckZu64zHiKNNxMApbvPWo_b2bgv7wpkUWWOsQCoF_UDaJUMBbFe1SkYxf1x-vhjPgkdwHfQv5TSEcrPVM8buuVojZtYhTFn_4gKiBJwskmZj4MYYwf1SH5SN3XdEfzO5W_epM3dbvKVJDZYPWQINQdOZ1AxxJaooc9EwxF3B9Q"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Mystic Grove</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Adventure</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="7"><img class="h-64 w-full object-cover" data-alt="a colorful street art graffiti wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWR0ctgyTru-MZT9kCkIOQ0UEm3JeCvuWQTChCrjJtYsstTLBSknaGW5hltxVflOIvDrhp6TDlrTe6njhCyOxu-dU5crZrqKzvpDzKQ-eeJ35LhYx8QZqLX4WzVY9Qqzqvxgglx3DWQu3T1Ae09Ae4L4-sCxIgetrAn5XRS5sAWxS39Ng2fguT218zunV3wOAUkGNS7HRtuSYiT2FI244unDoRn-UQWVXV1GB0-8HP5U6__66ekwZsTdXXkELd_dkrXeF7tUHlyyLp"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Urban Canvas</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Simulation</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+<div class="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-primary/20" data-id="8"><img class="h-64 w-full object-cover" data-alt="people playing laser tag in a dark arena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0WzlQSPcV5WZQX0MewKUKZqzFyQEGy1QwggkCsMpX8ieGg91nO5OVXk1NRaMInw34MydblstKXGbz_J4wF-FWygCEw6dTSiHMqqGpFilGOnwBhdgQNWtqoTIU7rylEEVK4AFTxGM1DZ0AtRBf1auBWoEwEKmLCIQwlt-nKqE6Rv_Vzac6HAd_wYaO8uPbTwV5RA5jqTQRZRZeTmmr_6SXr3XlL2yBOoZlxhCODUMOgpuYLKhvtfrGFxS7gUHA7mdpje3hKLlyDiIq"/><div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div><div class="absolute inset-x-0 bottom-0 p-4"><h4 class="font-bold text-white">Laser Tag Arena</h4><div class="flex h-5 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/20 px-2 mt-1 w-fit"><p class="text-white text-xs font-medium">Action</p></div></div><button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-black/30 text-white/70 transition-colors hover:bg-primary hover:text-white"><span class="material-symbols-outlined text-lg">favorite_border</span></button><div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">Play</button><button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold">Details</button></div></div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-black/20 border-t border-white/10 mt-16">
+<div class="container mx-auto px-4 py-8 lg:px-8">
+<div class="grid grid-cols-1 gap-8 text-center md:grid-cols-3 md:text-left">
+<div class="flex flex-col items-center md:items-start">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">stadia_controller</span>
+<h2 class="text-white text-xl font-bold">GameVerse</h2>
+</div>
+<p class="mt-4 max-w-xs text-sm text-gray-400">The ultimate hub for discovering and playing thousands of indie and classic games instantly on your browser.</p>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<h4 class="font-bold text-white">Links</h4>
+<nav class="mt-4 flex flex-col gap-2">
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">About</a>
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">Contact</a>
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div>
+<h4 class="font-bold text-white">Community</h4>
+<nav class="mt-4 flex flex-col gap-2">
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">Discord</a>
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">Twitter</a>
+<a class="text-sm text-gray-400 transition-colors hover:text-primary" href="#">Forums</a>
+</nav>
+</div>
+</div>
+<div class="mt-8 border-t border-white/10 pt-6 text-center text-sm text-gray-500">
+<p>© 2024 GameVerse. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
