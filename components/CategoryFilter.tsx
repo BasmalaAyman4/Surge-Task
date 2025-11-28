@@ -19,9 +19,9 @@ export function CategoryFilter({ variant = 'buttons' }: CategoryFilterProps) {
                     <button
                         key={category}
                         onClick={() => toggleCategory(category)}
-                        className="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/10 px-4 transition-colors hover:bg-white/20"
+                        className="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 px-4 transition-colors hover:bg-gray-300 dark:hover:bg-white/20"
                     >
-                        <p className="text-white text-sm font-medium">{category}</p>
+                        <p className="text-gray-900 dark:text-white text-sm font-medium">{category}</p>
                     </button>
                 ))}
             </div>
@@ -36,7 +36,7 @@ export function CategoryFilter({ variant = 'buttons' }: CategoryFilterProps) {
                         onClick={clearFilters}
                         className={`flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg pl-4 pr-4 transition-colors ${selectedCategories.length === 0
                                 ? 'bg-[#9d25f4] text-white font-bold'
-                                : 'bg-white/5 text-white font-medium hover:bg-white/10'
+                                : 'bg-gray-200 dark:bg-white/5 text-gray-900 dark:text-white font-medium hover:bg-gray-300 dark:hover:bg-white/10'
                             }`}
                     >
                         All
@@ -48,7 +48,7 @@ export function CategoryFilter({ variant = 'buttons' }: CategoryFilterProps) {
                             onClick={() => toggleCategory(category)}
                             className={`flex h-9 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-lg pl-4 pr-4 transition-colors ${selectedCategories.includes(category)
                                     ? 'bg-[#9d25f4] text-white font-bold'
-                                    : 'bg-white/5 text-white font-medium hover:bg-white/10'
+                                    : 'bg-gray-200 dark:bg-white/5 text-gray-900 dark:text-white font-medium hover:bg-gray-300 dark:hover:bg-white/10'
                                 }`}
                         >
                             {category}
@@ -59,7 +59,7 @@ export function CategoryFilter({ variant = 'buttons' }: CategoryFilterProps) {
                 {(selectedCategories.length > 0) && (
                     <button
                         onClick={clearFilters}
-                        className="flex h-9 min-w-[84px] cursor-pointer items-center justify-center gap-2 rounded-lg px-4 bg-transparent text-gray-400 text-sm font-bold transition-colors hover:text-white"
+                        className="flex h-9 min-w-[84px] cursor-pointer items-center justify-center gap-2 rounded-lg px-4 bg-transparent text-gray-600 dark:text-gray-400 text-sm font-bold transition-colors hover:text-gray-900 dark:hover:text-white"
                     >
                         <X className="h-5 w-5" />
                         <span>Clear filters</span>

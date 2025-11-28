@@ -17,7 +17,7 @@ export function GameCard({ game, variant = 'grid' }: GameCardProps) {
 
     if (variant === 'featured') {
         return (
-            <div className="group relative flex flex-col overflow-hidden rounded-xl bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[#9d25f4]/20">
+            <div className="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-[#9d25f4]/20">
                 <div className="relative h-48 w-full">
                     <Image
                         src={game.thumbnail}
@@ -40,8 +40,8 @@ export function GameCard({ game, variant = 'grid' }: GameCardProps) {
                 </div>
 
                 <div className="flex flex-1 flex-col p-4">
-                    <h4 className="text-lg font-bold text-white">{game.title}</h4>
-                    <p className="mt-1 text-sm text-gray-400 flex-grow line-clamp-2">
+                    <h4 className="text-lg font-bold text-gray-900 dark:text-white">{game.title}</h4>
+                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400 flex-grow line-clamp-2">
                         {game.description}
                     </p>
 
@@ -49,9 +49,9 @@ export function GameCard({ game, variant = 'grid' }: GameCardProps) {
                         {game.tags?.map((tag) => (
                             <div
                                 key={tag}
-                                className="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-white/10 px-2"
+                                className="flex h-6 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-200 dark:bg-white/10 px-2"
                             >
-                                <p className="text-white text-xs font-medium">{tag}</p>
+                                <p className="text-gray-900 dark:text-white text-xs font-medium">{tag}</p>
                             </div>
                         ))}
                     </div>
@@ -68,7 +68,7 @@ export function GameCard({ game, variant = 'grid' }: GameCardProps) {
     }
 
     return (
-        <div className="group relative overflow-hidden rounded-xl bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[#9d25f4]/20">
+        <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-white/5 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl dark:hover:shadow-[#9d25f4]/20">
             <div className="relative h-64 w-full">
                 <Image
                     src={game.thumbnail}
