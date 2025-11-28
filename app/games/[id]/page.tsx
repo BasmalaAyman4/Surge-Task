@@ -124,7 +124,7 @@ export default function GamePage({ params }: GamePageProps) {
                     <span className="font-medium">Back to Games</span>
                 </Link>
 
-               
+
                 <section className="mb-12 rounded-xl overflow-hidden">
                     <div className="relative" id="game-container">
                         <div className="relative flex items-center justify-center aspect-video bg-black">
@@ -351,117 +351,9 @@ export default function GamePage({ params }: GamePageProps) {
                             </p>
                         </div>
 
-                     
 
-                        <div>
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    User Reviews
-                                </h3>
-                                <div className="flex items-center gap-2">
-                                    <div className="flex">
-                                        {[1, 2, 3, 4, 5].map((star) => (
-                                            <svg
-                                                key={star}
-                                                className="w-5 h-5 text-yellow-400 fill-current"
-                                                viewBox="0 0 20 20"
-                                            >
-                                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                            </svg>
-                                        ))}
-                                    </div>
-                                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                                        4.8 out of 5
-                                    </span>
-                                </div>
-                            </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
-                                    <div className="flex items-start gap-4 mb-3">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold">
-                                            G
-                                        </div>
-                                        <div className="flex-1">
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">
-                                                GlitchGoddess
-                                            </h4>
-                                            <div className="flex">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <svg
-                                                        key={star}
-                                                        className="w-4 h-4 text-yellow-400 fill-current"
-                                                        viewBox="0 0 20 20"
-                                                    >
-                                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                                    </svg>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        &quot;An absolute masterpiece of cyberpunk storytelling. Neo-Kyoto is breathtakingly beautiful and dangerously immersive. A must-play!&quot;
-                                    </p>
-                                </div>
 
-                                <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
-                                    <div className="flex items-start gap-4 mb-3">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white font-bold">
-                                            P
-                                        </div>
-                                        <div className="flex-1">
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">
-                                                PixelProwler
-                                            </h4>
-                                            <div className="flex">
-                                                {[1, 2, 3, 4].map((star) => (
-                                                    <svg
-                                                        key={star}
-                                                        className="w-4 h-4 text-yellow-400 fill-current"
-                                                        viewBox="0 0 20 20"
-                                                    >
-                                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                                    </svg>
-                                                ))}
-                                                <svg className="w-4 h-4 text-gray-300 dark:text-gray-600 fill-current" viewBox="0 0 20 20">
-                                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        &quot;The combat is fluid and satisfying, and the customization options are deep. Had a few minor bugs, but nothing game-breaking.&quot;
-                                    </p>
-                                </div>
-
-                                <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
-                                    <div className="flex items-start gap-4 mb-3">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center text-white font-bold">
-                                            Q
-                                        </div>
-                                        <div className="flex-1">
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">
-                                                QuestSeeker
-                                            </h4>
-                                            <div className="flex">
-                                                {[1, 2, 3, 4, 5].map((star) => (
-                                                    <svg
-                                                        key={star}
-                                                        className="w-4 h-4 text-yellow-400 fill-current"
-                                                        viewBox="0 0 20 20"
-                                                    >
-                                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                                    </svg>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        &quot;Lost 100 hours in this world and I regret nothing. The story, characters, and world-building are second to none.&quot;
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <aside className="space-y-6">
@@ -478,7 +370,7 @@ export default function GamePage({ params }: GamePageProps) {
                                     <span className="text-gray-600 dark:text-gray-400">Developer:</span>
                                     <span className="font-medium text-gray-900 dark:text-white">GameVerse Studios</span>
                                 </li>
-                               
+
                                 <li className="flex justify-between items-center">
                                     <span className="text-gray-600 dark:text-gray-400">Platform:</span>
                                     <span className="font-medium text-gray-900 dark:text-white">Web Browser</span>
@@ -487,7 +379,115 @@ export default function GamePage({ params }: GamePageProps) {
                         </div>
                     </aside>
                 </section>
+                <div className="mb-12">
+                    <div className="flex items-center justify-between mb-6">
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                            User Reviews
+                        </h3>
+                        <div className="flex items-center gap-2">
+                            <div className="flex">
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                    <svg
+                                        key={star}
+                                        className="w-5 h-5 text-yellow-400 fill-current"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                ))}
+                            </div>
+                            <span className="text-sm text-gray-600 dark:text-gray-400">
+                                4.8 out of 5
+                            </span>
+                        </div>
+                    </div>
 
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
+                            <div className="flex items-start gap-4 mb-3">
+                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold">
+                                    G
+                                </div>
+                                <div className="flex-1">
+                                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                                        GlitchGoddess
+                                    </h4>
+                                    <div className="flex">
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <svg
+                                                key={star}
+                                                className="w-4 h-4 text-yellow-400 fill-current"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                            </svg>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                                &quot;An absolute masterpiece of cyberpunk storytelling. Neo-Kyoto is breathtakingly beautiful and dangerously immersive. A must-play!&quot;
+                            </p>
+                        </div>
+
+                        <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
+                            <div className="flex items-start gap-4 mb-3">
+                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white font-bold">
+                                    P
+                                </div>
+                                <div className="flex-1">
+                                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                                        PixelProwler
+                                    </h4>
+                                    <div className="flex">
+                                        {[1, 2, 3, 4].map((star) => (
+                                            <svg
+                                                key={star}
+                                                className="w-4 h-4 text-yellow-400 fill-current"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                            </svg>
+                                        ))}
+                                        <svg className="w-4 h-4 text-gray-300 dark:text-gray-600 fill-current" viewBox="0 0 20 20">
+                                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                                &quot;The combat is fluid and satisfying, and the customization options are deep. Had a few minor bugs, but nothing game-breaking.&quot;
+                            </p>
+                        </div>
+
+                        <div className="bg-gray-100 dark:bg-white/5 p-6 rounded-xl">
+                            <div className="flex items-start gap-4 mb-3">
+                                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center text-white font-bold">
+                                    Q
+                                </div>
+                                <div className="flex-1">
+                                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                                        QuestSeeker
+                                    </h4>
+                                    <div className="flex">
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <svg
+                                                key={star}
+                                                className="w-4 h-4 text-yellow-400 fill-current"
+                                                viewBox="0 0 20 20"
+                                            >
+                                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                            </svg>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                                &quot;Lost 100 hours in this world and I regret nothing. The story, characters, and world-building are second to none.&quot;
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 {relatedGames.length > 0 && (
                     <section>
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
