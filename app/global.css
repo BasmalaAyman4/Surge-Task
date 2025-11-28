@@ -1,21 +1,17 @@
 @import "tailwindcss";
 
-:root {
-  --font-space-grotesk: 'Space Grotesk', sans-serif;
-}
+@variant dark (&:where(.dark, .dark *));
 
 body {
-  font-family: var(--font-space-grotesk);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-/* Smooth animations */
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -34,7 +30,6 @@ body {
   background: rgba(157, 37, 244, 0.7);
 }
 
-/* Line clamp utility */
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -42,7 +37,6 @@ body {
   overflow: hidden;
 }
 
-/* Sonner toast styles */
 [data-sonner-toast] {
   direction: ltr;
 }
