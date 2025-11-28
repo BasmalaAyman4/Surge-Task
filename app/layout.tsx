@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Toaster } from 'sonner';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Footer } from '@/components/Footer';
+import { BottomNav } from '@/components/BottomNav';
 
 const spaceGrotesk = Space_Grotesk({
   weight: ['400', '500', '700'],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {children}
             </main>
             <Footer />
+            <BottomNav/>
           </div>
           <Toaster position="top-right" richColors />
         </ThemeProvider>
