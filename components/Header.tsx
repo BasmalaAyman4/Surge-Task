@@ -29,7 +29,6 @@ export function Header() {
                     </h2>
                 </Link>
 
-                {/* Desktop Navigation */}
                 <nav className="hidden items-center gap-9 md:flex">
                     {navLinks.map((link) => (
                         <Link

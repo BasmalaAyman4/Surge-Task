@@ -1,10 +1,8 @@
 export default function Loading() {
     return (
         <div className="container mx-auto px-4 py-8">
-            {/* Back Button Skeleton */}
             <div className="h-6 w-32 bg-gray-200 dark:bg-white/10 rounded mb-6 animate-pulse" />
 
-            {/* Title Skeleton */}
             <div className="mb-6">
                 <div className="h-10 w-3/4 bg-gray-200 dark:bg-white/10 rounded mb-2 animate-pulse" />
                 <div className="h-6 w-full bg-gray-200 dark:bg-white/10 rounded mb-4 animate-pulse" />
@@ -14,12 +12,10 @@ export default function Loading() {
                 </div>
             </div>
 
-            {/* Game Player Skeleton */}
             <div className="relative bg-gray-200 dark:bg-white/10 rounded-xl overflow-hidden mb-8 animate-pulse">
                 <div className="w-full" style={{ paddingBottom: '56.25%' }} />
             </div>
 
-            {/* Related Games Skeleton */}
             <div className="mb-6">
                 <div className="h-8 w-48 bg-gray-200 dark:bg-white/10 rounded mb-6 animate-pulse" />
                 <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">

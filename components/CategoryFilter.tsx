@@ -3,7 +3,6 @@
 import { X } from 'lucide-react';
 import { useGameStore } from '@/stores/gameStore';
 import { CATEGORIES } from '@/lib/games';
-import type { GameCategory } from '@/types/game';
 
 interface CategoryFilterProps {
     variant?: 'pills' | 'buttons';

@@ -18,7 +18,6 @@ export default function RecentlyPlayedPage() {
 
     return (
         <div className="container mx-auto px-4 py-8 sm:py-12">
-            {/* Header */}
             <div className="mb-8">
                 <Link
                     href="/"
@@ -39,7 +38,6 @@ export default function RecentlyPlayedPage() {
                 </p>
             </div>
 
-            {/* Games Grid */}
             {recentGames.length === 0 ? (
                 <div className="text-center py-16">
                     <Clock className="h-16 w-16 text-gray-300 dark:text-gray-600 mx-auto mb-4" />

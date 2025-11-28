@@ -23,7 +23,6 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="relative py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-[#1a1022] dark:to-[#1a1022]">
         <div
           className="absolute inset-0 z-0 opacity-10 dark:opacity-20"
@@ -51,10 +50,8 @@ export default function HomePage() {
       </section>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
-        {/* Filter Bar */}
         <CategoryFilter variant="buttons" />
 
-        {/* Featured Games Section */}
         {featuredGames.length > 0 && selectedCategories.length === 0 && !searchQuery && (
           <section className="mb-16">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Trending Now</h3>
@@ -66,7 +63,6 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* All Games Grid */}
         <section>
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             {searchQuery || selectedCategories.length > 0 ? 'Search Results' : 'All Games'}
