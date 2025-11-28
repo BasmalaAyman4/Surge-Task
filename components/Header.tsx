@@ -1,20 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { Moon, Sun, Gamepad2 } from 'lucide-react';
+import { Moon, Sun, Gamepad2, Menu, X, Heart, Clock, Home } from 'lucide-react';
 import { useGameStore } from '@/stores/gameStore';
 import { usePathname } from 'next/navigation';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 
 export function Header() {
     const { isDarkMode, toggleDarkMode } = useGameStore();
     const pathname = usePathname();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navLinks = useMemo(
         () => [
-            { href: '/', label: 'Home' },
-            { href: '/favorites', label: 'Favorites' },
-            { href: '/recently-played', label: 'Recently Played' },
+            { href: '/', label: 'Home', icon: Home },
+            { href: '/favorites', label: 'Favorites', icon: Heart },
+            { href: '/recently-played', label: 'Recently Played', icon: Clock },
         ],
         []
     );
@@ -54,8 +55,40 @@ export function Header() {
                     >
                         {isDarkMode ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
                     </button>
+
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-200 dark:bg-white/5 text-gray-900 dark:text-white transition-colors hover:bg-gray-300 dark:hover:bg-white/10 md:hidden"
+                        aria-label="Toggle menu"
+                    >
+                        {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                    </button>
                 </div>
             </div>
+
+            {isMobileMenuOpen && (
+                <div className="md:hidden border-t border-gray-300 dark:border-white/10 bg-white dark:bg-[#1a1022]">
+                    <nav className="container mx-auto px-4 py-4">
+                        {navLinks.map((link) => {
+                            const Icon = link.icon;
+                            return (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${pathname === link.href
+                                            ? 'bg-[#9d25f4]/10 text-[#9d25f4] font-semibold'
+                                            : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-white/5'
+                                        }`}
+                                >
+                                    <Icon className="h-5 w-5" />
+                                    <span>{link.label}</span>
+                                </Link>
+                            );
+                        })}
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }
