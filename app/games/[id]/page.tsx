@@ -250,7 +250,7 @@ export default function GamePage({ params }: GamePageProps) {
                                 </div>
                             </div>
                             <p className="text-sm text-gray-600 dark:text-gray-400">
-                                An absolute masterpiece of cyberpunk storytelling. Neo-Kyoto is breathtakingly beautiful and dangerously immersive. A must-play!"
+                                An absolute masterpiece of cyberpunk storytelling. Neo-Kyoto is breathtakingly beautiful and dangerously immersive. A must-play!
                             </p>
                         </div>
 
@@ -280,7 +280,7 @@ export default function GamePage({ params }: GamePageProps) {
                                 </div>
                             </div>
                             <p className="text-sm text-gray-600 dark:text-gray-400">
-                                The combat is fluid and satisfying, and the customization options are deep. Had a few minor bugs, but nothing game-breaking."
+                                The combat is fluid and satisfying, and the customization options are deep. Had a few minor bugs, but nothing game-breaking.
                             </p>
                         </div>
 
@@ -307,7 +307,7 @@ export default function GamePage({ params }: GamePageProps) {
                                 </div>
                             </div>
                             <p className="text-sm text-gray-600 dark:text-gray-400">
-                                Lost 100 hours in this world and I regret nothing. The story, characters, and world-building are second to none."
+                                Lost 100 hours in this world and I regret nothing. The story, characters, and world-building are second to none.
                             </p>
                         </div>
                     </div>

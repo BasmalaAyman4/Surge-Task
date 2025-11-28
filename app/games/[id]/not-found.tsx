@@ -13,8 +13,7 @@ export default function NotFound() {
                         Game Not Found
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-md">
-                        Sorry, we couldn't find the game you're looking for. It may have been removed or the link might be incorrect.
-                    </p>
+Sorry, we couldn&apos;t find the game you&apos;re looking for. It may have been removed or the link might be incorrect.                    </p>
                 </div>
 
                 <Link
