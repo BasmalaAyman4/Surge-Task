@@ -98,12 +98,7 @@ export function GameCard({ game, variant = 'grid' }: GameCardProps) {
             </button>
 
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <Link
-                    href={`/games/${game.id}`}
-                    className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#9d25f4] text-white text-sm font-bold hover:bg-[#9d25f4]/80"
-                >
-                    Play
-                </Link>
+              
                 <Link
                     href={`/games/${game.id}`}
                     className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/20 text-white text-sm font-bold hover:bg-white/30"
