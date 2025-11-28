@@ -45,7 +45,7 @@ export default function HomePage() {
               Discover and play a vast collection of indie and classic games right from your browser.
             </h2>
 
-            <SearchBar variant="hero" />
+            <SearchBar />
           </div>
         </div>
       </section>
